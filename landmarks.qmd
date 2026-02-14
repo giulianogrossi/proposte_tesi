@@ -1,6 +1,6 @@
 # Landmarks 3D {.unnumbered}
 
-## Titolo: Analisi Automatizzata di Landmark 3D per il Riconoscimento Anatomico e il Supporto alle Decisioni Cliniche
+## _Titolo:_ Analisi Automatizzata di Landmark 3D per il Riconoscimento Anatomico e il Supporto alle Decisioni Cliniche
 
 ## Contesto e Motivazione
 
