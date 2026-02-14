@@ -19,7 +19,7 @@ Tali metodi presentano limiti di soggettività e non sempre consentono un’iden
 
 La **remote photoplethysmography (rPPG)** permette di stimare in modo *contactless* le variazioni del volume ematico attraverso l’analisi delle variazioni cromatiche cutanee nel dominio RGB. Recenti studi dimostrano che l’analisi spettrale (PSD) e la selezione adattiva di patch migliorano significativamente la robustezza del segnale pulsatile, anche in presenza di rumore e movimenti  <
 
-Applicare tali tecniche al trapianto cutaneo consente di stimare un indice quantitativo di perfusione microvascolare del graft .
+Applicare tali tecniche al trapianto cutaneo consente di stimare un indice quantitativo di perfusione microvascolare del graft.
 
 ## Obiettivo
 
@@ -76,10 +76,14 @@ Progettare e validare un sistema rPPG non invasivo per:
 
 Il progetto rappresenta un ponte tra ingegneria biomedica, computer vision e chirurgia ricostruttiva, con applicazione diretta in contesto ospedaliero ad alta specializzazione.
 
-## Biblio
+
+### Papers: 
+- @Boccignone2020Access
+- @Boccignone2022PeerJ
+- @Boccignone2025BSPC 
+
+
+## References
 
 ::: {#refs}
-@rppg_Access 
-@Boccignone2022pyVHR
-@Boccignone2025PSDClustering 
 :::
