@@ -274,17 +274,17 @@
     "href": "rppg.html#impatto",
     "title": "RPPG e segnali vitali",
     "section": "Impatto",
-    "text": "Impatto\n\nMiglioramento della sicurezza post-operatoria.\nRiduzione di reinterventi tardivi.\nIntroduzione di monitoraggio continuo non invasivo.\nPotenziale estensione a:\n\nlembi microchirurgici,\ntrapianti complessi,\ntelemonitoraggio domiciliare.\n\n\nIl progetto rappresenta un ponte tra ingegneria biomedica, computer vision e chirurgia ricostruttiva, con applicazione diretta in contesto ospedaliero ad alta specializzazione.\n\nReferences:\n\nBoccignone et al. (2020)\nBoccignone et al. (2022)\nBoccignone et al. (2025)",
+    "text": "Impatto\n\nMiglioramento della sicurezza post-operatoria.\nRiduzione di reinterventi tardivi.\nIntroduzione di monitoraggio continuo non invasivo.\nPotenziale estensione a:\n\nlembi microchirurgici,\ntrapianti complessi,\ntelemonitoraggio domiciliare.\n\n\nIl progetto rappresenta un ponte tra ingegneria biomedica, computer vision e chirurgia ricostruttiva, con applicazione diretta in contesto ospedaliero ad alta specializzazione.\n\nPrincipali riferimenti bibliografici:\n\nBoccignone et al. (2020)\nBoccignone et al. (2022)\nBoccignone et al. (2025)",
     "crumbs": [
       "RPPG e segnali vitali"
     ]
   },
   {
-    "objectID": "rppg.html#biblio",
-    "href": "rppg.html#biblio",
+    "objectID": "rppg.html#references",
+    "href": "rppg.html#references",
     "title": "RPPG e segnali vitali",
-    "section": "Biblio",
-    "text": "Biblio\n\n\nBoccignone, Giuseppe, Donatello Conte, Vittorio Cuculo, Alessandro\nD’Amelio, Giuliano Grossi, and Raffaella Lanzarotti. 2020. “An\nOpen Framework for Remote-PPG Methods and Their Assessment.”\nIEEE Access 8: 216083–103. https://doi.org/10.1109/ACCESS.2020.3040936.\n\n\n———. 2025. “Enhancing rPPG Pulse-Signal Recovery by Facial\nSampling and PSD Clustering.” Biomedical Signal Processing\nand Control 101: 107158. https://doi.org/10.1016/j.bspc.2024.107158.\n\n\nBoccignone, Giuseppe, Donatello Conte, Vittorio Cuculo, Alessandro\nD’Amelio, Giuliano Grossi, Raffaella Lanzarotti, and Edoardo Mortara.\n2022. “pyVHR: A Python Framework for Remote\nPhotoplethysmography.” PeerJ Computer Science 8: e929.\nhttps://peerj.com/articles/cs-929/.",
+    "section": "References",
+    "text": "References\n\n\nBoccignone, Giuseppe, Donatello Conte, Vittorio Cuculo, Alessandro\nD’Amelio, Giuliano Grossi, and Raffaella Lanzarotti. 2020. “An\nOpen Framework for Remote-PPG Methods and Their Assessment.”\nIEEE Access 8: 216083–103. https://doi.org/10.1109/ACCESS.2020.3040936.\n\n\n———. 2025. “Enhancing rPPG Pulse-Signal Recovery by Facial\nSampling and PSD Clustering.” Biomedical Signal Processing\nand Control 101: 107158. https://doi.org/10.1016/j.bspc.2024.107158.\n\n\nBoccignone, Giuseppe, Donatello Conte, Vittorio Cuculo, Alessandro\nD’Amelio, Giuliano Grossi, Raffaella Lanzarotti, and Edoardo Mortara.\n2022. “pyVHR: A Python Framework for Remote\nPhotoplethysmography.” PeerJ Computer Science 8: e929.\nhttps://peerj.com/articles/cs-929/.",
     "crumbs": [
       "RPPG e segnali vitali"
     ]
