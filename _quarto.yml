@@ -11,6 +11,8 @@ book:
     - health1.qmd
     - health2.qmd
     - rppg.qmd
+    - hands1.qmd
+    - hands2.qmd
 
 format:
   html:

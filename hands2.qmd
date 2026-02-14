@@ -1,0 +1,70 @@
+# Hands 3D (2) {.unnumbered}
+
+## _Titolo_: Classificazione delle Azioni delle Mani tramite Modellazione Multi-Scala e Analisi Spettrale
+
+![](images/hands3D.png)
+
+## Contesto
+
+La classificazione delle azioni della mano (es. pick, rotate, unscrew, remove) è cruciale per:
+
+- riconoscimento di attività egocentriche,
+- robotica assistiva,
+- monitoraggio comportamentale,
+- ambienti smart healthcare.
+
+Le azioni della mano sono caratterizzate da:
+
+- pattern temporali multi-scala,
+- componenti lente (configurazione globale),
+- componenti veloci (micro-articolazioni delle dita).
+
+La modellazione frequenziale slow–fast ha mostrato efficacia nella cattura delle dinamiche articolari.
+
+## Obiettivo
+
+Sviluppare un sistema di classificazione delle azioni delle mani che:
+
+1. Utilizzi decomposizione spettrale multi-scala.
+2. Combini informazioni lente e rapide.
+3. Migliori robustezza in scenari egocentrici.
+4. Sia efficiente per applicazioni real-time.
+
+## Attività
+
+1. **Preprocessing**
+   - Normalizzazione wrist-centered.
+   - Segmentazione temporale.
+   - Proiezione DCT delle traiettorie articolari.
+
+2. **Architettura**
+   - Feature extraction slow/fast.
+   - Gating frequenziale adattivo.
+   - Aggregazione temporale (MLP o temporal pooling).
+   - Test confronto con:
+     - LSTM
+     - Transformer
+     - GNN
+
+3. **Loss e Metriche**
+   - Cross-Entropy loss
+   - Accuracy
+   - F1-score
+   - Confusion matrix per analisi errori.
+
+4. **Analisi interpretabilità**
+   - Studio frequenze discriminanti per ogni azione.
+   - Saliency su giunti più rilevanti.
+
+## Risultati Attesi
+
+- Miglioramento accuracy rispetto a modelli puramente temporali.
+- Identificazione di firme spettrali caratteristiche per azioni specifiche.
+- Sistema efficiente per embedded deployment.
+
+## Impatto
+
+- Analisi comportamento umano.
+- Monitoraggio riabilitazione motoria.
+- Riconoscimento attività manuali in ambito sanitario.
+- Applicazioni AR/VR e gaming.

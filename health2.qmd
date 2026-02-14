@@ -1,6 +1,6 @@
-# Heatlh 2 {.unnumbered}
+# Heatlh (2) {.unnumbered}
 
-## Titolo: Infrastruttura Federata e Privacy-Preserving per l’Addestramento di Modelli AI in Sanità: Progettazione e Valutazione di un Framework Edge–Cloud–Blockchain
+## _Titolo_: Infrastruttura Federata e Privacy-Preserving per l’Addestramento di Modelli AI in Sanità: Progettazione e Valutazione di un Framework Edge–Cloud–Blockchain
 
 ![](images/health.png)
 

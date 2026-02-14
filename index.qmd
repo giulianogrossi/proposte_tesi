@@ -1,5 +1,98 @@
-# Introduction
+# Presentazione {.unnumbered}
 
-This is a book created from markdown and executable code.
+Le tesi proposte nell’area **Health, AI e Multimedia Analysis** si articolano in due principali tipologie, pensate per valorizzare differenti inclinazioni e obiettivi formativi dello studente:
 
-See @knuth84 for additional discussion of literate programming.
+- **Tesi a carattere teorico–metodologico**
+- **Tesi a carattere sperimentale–applicativo**
+
+Entrambe prevedono rigore scientifico, sviluppo software e validazione quantitativa, ma differiscono per enfasi e contesto operativo.
+
+---
+
+## 1. Tesi di Carattere Teorico  
+### Sviluppo di Modelli di Deep Learning e AI Avanzata
+
+Queste tesi sono orientate alla progettazione e sviluppo di **nuovi modelli computazionali**, con particolare attenzione a:
+
+- Deep Learning per segnali biomedici
+- Modelli multimodali (video, segnali fisiologici, testo clinico)
+- Architetture Transformer e reti neurali spettrali
+- Explainable AI (XAI)
+- Metric learning e self-supervised learning
+- Clustering non supervisionato e analisi spettrale
+
+L’obiettivo è contribuire allo **sviluppo metodologico**, introducendo nuove architetture o strategie di apprendimento con validazione su dataset di riferimento o clinici.
+
+### Caratteristiche principali
+
+- Forte componente matematica e modellistica  
+- Analisi teorica delle prestazioni  
+- Studio della generalizzazione e robustezza  
+- Possibile pubblicazione scientifica in ambito AI/ML  
+
+Ideali per studenti interessati a:
+
+- Ricerca accademica
+- Dottorato
+- Sviluppo di algoritmi innovativi
+
+---
+
+## 2. Tesi di Carattere Sperimentale  
+### Multimedia, Analisi del Comportamento Umano e Salute
+
+Queste tesi sono focalizzate su **applicazioni reali**, spesso in collaborazione con strutture cliniche o laboratori sperimentali.
+
+Ambiti tipici:
+
+- Analisi video per salute e monitoraggio clinico  
+- Remote photoplethysmography (rPPG)  
+- Analisi del comportamento umano da segnali audiovisivi  
+- Valutazione dello stato emotivo o cognitivo  
+- Monitoraggio non invasivo in ambito sanitario  
+- Sistemi intelligenti per ambienti smart healthcare  
+
+L’attenzione è rivolta a:
+
+- Acquisizione dati reali  
+- Progettazione pipeline completa (end-to-end)  
+- Validazione sperimentale su casi clinici o scenari realistici  
+- Integrazione tra modelli AI e vincoli del mondo reale  
+
+### Caratteristiche principali
+
+- Forte componente applicativa  
+- Collaborazione interdisciplinare  
+- Valutazione statistica su dati reali  
+- Impatto clinico o industriale  
+
+Ideali per studenti interessati a:
+
+- Innovazione tecnologica in ambito sanitario  
+- Trasferimento tecnologico  
+- Ingegneria applicata e sviluppo prototipale  
+
+---
+
+# Approccio Integrato
+
+In molti casi, le due dimensioni si integrano:
+
+- sviluppo di modelli deep learning innovativi  
+- applicazione e validazione su problemi reali in ambito salute o multimedia  
+
+Questo consente allo studente di maturare competenze sia teoriche che sperimentali, con una formazione completa e altamente spendibile in:
+
+- ricerca accademica  
+- industria AI  
+- settore biomedicale  
+- digital health e telemedicina  
+
+---
+
+Le proposte di tesi vengono definite in modo personalizzato, sulla base:
+
+- del profilo dello studente  
+- delle competenze pregresse  
+- degli interessi verso teoria o applicazione  
+- degli obiettivi post-laurea  

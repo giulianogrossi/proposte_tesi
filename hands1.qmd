@@ -1,0 +1,71 @@
+# hands 3D (1) {.unnumbered}
+
+## _Titolo_: Predizione dell’Articolazione 3D della Mano tramite Decomposizione Spettrale Slow–Fast
+
+![](images/hands3D.png)
+
+## Contesto
+
+La predizione dell’articolazione 3D della mano è un problema emergente distinto dal full-body motion forecasting.  
+La mano presenta:
+
+- dinamiche ad alta dimensionalità (oltre 20 DOF),
+- coesistenza di movimenti lenti globali (polso/palmo),
+- movimenti rapidi e asincroni delle dita.
+
+Recenti lavori mostrano che la decomposizione in dominio frequenziale (DCT) con modellazione slow–fast migliora la coerenza temporale e riduce l’errore MPJPE.
+
+Il problema è formulato come:
+
+Dato un segmento osservato $X_{1:T_{in}}$, predire le configurazioni future $Y_{1:T_{out}}$.
+
+## Obiettivo
+
+Progettare e validare un modello di forecasting 3D della mano che:
+
+1. Disentangli dinamiche slow (wrist/palm) e fast (finger articulation).
+2. Operi in dominio DCT con gating adattivo.
+3. Mantenga efficienza computazionale real-time.
+4. Migliori la coerenza biomeccanica delle traiettorie predette.
+
+## Attività
+
+1. **Formalizzazione del problema**
+   - Rappresentazione traiettorie $P_{1:T} \in \mathbb{R}^{N \times T}$
+   - Residual prediction rispetto all’ultimo frame osservato.
+
+2. **Progettazione architettura**
+   - Proiezione DCT tipo-II
+   - Dual-path slow/fast
+   - Sigmoid spectral gates:
+     $$
+     g_s(\nu), \quad g_f(\nu)
+     $$
+   - Fusione convessa learnable:
+     $$
+     \hat{C} = m \odot \hat{C}_s + (1-m)\odot \hat{C}_f
+     $$
+
+3. **Funzione di costo**
+   - MPJPE
+   - Regularizzazione lunghezze ossee
+   - Coerenza velocità articolare
+
+4. **Valutazione sperimentale**
+   - Dataset pubblici (AssemblyHands, H2O, FPHA, BigHand2.2M)
+   - Analisi ablation (numero coefficienti DCT, rimozione gating, ecc.)
+   - Confronto con MLP, Transformer, GNN.
+
+## Risultati Attesi
+
+- Riduzione MPJPE rispetto a baseline MLP/Transformer.
+- Maggiore coerenza temporale nelle traiettorie.
+- Dimostrazione che la decomposizione frequenziale è un bias efficace.
+- Modello lightweight (<5 ms latency).
+
+## Impatto
+
+- Applicazioni in robotica collaborativa.
+- Anticipazione del grasp.
+- Human–robot interaction.
+- Telemanipolazione e realtà virtuale.

@@ -29,3 +29,6 @@ _cache/
 *.snm
 # vscode
 /.vscode
+
+/.quarto/
+**/*.quarto_ipynb

@@ -1,6 +1,6 @@
-# Health 1 {.unnumbered}
+# Health (1) {.unnumbered}
 
-## Titolo: Architettura Multi-Agent per Patient Digital Twin: Progettazione e Validazione di un Orchestratore Clinico Explainable
+## _Titolo_: Architettura Multi-Agent per Patient Digital Twin: Progettazione e Validazione di un Orchestratore Clinico Explainable
 
 ![](images/health.png)
 
