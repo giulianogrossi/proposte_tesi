@@ -146,7 +146,7 @@ Questo rende l’intero sistema end-to-end.
 
 ### Papers: 
 - [Scarica la tesi completa (PDF)](papers/tesi_morgan_malavasi.pdf)
-- @Boccignone2025BSPC 
+- @Boccignone2025BSPC
 
 
 ## References
