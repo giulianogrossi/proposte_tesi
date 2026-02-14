@@ -1,3 +1,32 @@
 /.vscode
 /_book
-**/*.quarto/
+
+# ==============================
+# Quarto
+# ==============================
+
+# Rendered output directories
+_site/
+_book/
+docs/
+
+# Quarto cache
+.quarto/
+.qmd_cache/
+_cache/
+
+# Knitr / R Markdown cache
+*_files/
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# PDF build artifacts
+*.nav
+*.snm
