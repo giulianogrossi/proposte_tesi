@@ -274,7 +274,7 @@
     "href": "rppg.html#impatto",
     "title": "RPPG e segnali vitali",
     "section": "Impatto",
-    "text": "Impatto\n\nMiglioramento della sicurezza post-operatoria.\nRiduzione di reinterventi tardivi.\nIntroduzione di monitoraggio continuo non invasivo.\nPotenziale estensione a:\n\nlembi microchirurgici,\ntrapianti complessi,\ntelemonitoraggio domiciliare.\n\n\nIl progetto rappresenta un ponte tra ingegneria biomedica, computer vision e chirurgia ricostruttiva, con applicazione diretta in contesto ospedaliero ad alta specializzazione.\n\nPrincipali riferimenti bibliografici:\n\nBoccignone et al. (2020)\nBoccignone et al. (2022)\nBoccignone et al. (2025)",
+    "text": "Impatto\n\nMiglioramento della sicurezza post-operatoria.\nRiduzione di reinterventi tardivi.\nIntroduzione di monitoraggio continuo non invasivo.\nPotenziale estensione a:\n\nlembi microchirurgici,\ntrapianti complessi,\ntelemonitoraggio domiciliare.\n\n\nIl progetto rappresenta un ponte tra ingegneria biomedica, computer vision e chirurgia ricostruttiva, con applicazione diretta in contesto ospedaliero ad alta specializzazione.\n\nPapers:\n\nBoccignone et al. (2020)\nBoccignone et al. (2022)\nBoccignone et al. (2025)",
     "crumbs": [
       "RPPG e segnali vitali"
     ]
@@ -407,6 +407,116 @@
     "text": "Impatto\n\nAnalisi comportamento umano.\nMonitoraggio riabilitazione motoria.\nRiconoscimento attività manuali in ambito sanitario.\nApplicazioni AR/VR e gaming.",
     "crumbs": [
       "Hands 3D (2)"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html",
+    "href": "deep_clustering.html",
+    "title": "Deep clustering",
+    "section": "",
+    "text": "Titolo: Deep CircleClustering: Integration of Optimisation on \\(S^1\\) in Deep Learning Architectures for Self-Consistent Clustering",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#contesto",
+    "href": "deep_clustering.html#contesto",
+    "title": "Deep clustering",
+    "section": "Contesto",
+    "text": "Contesto\nL’algoritmo CircleClustering introduce un paradigma innovativo di clustering non supervisionato basato sulla proiezione dei dati su un cerchio unitario e su un sistema dinamico discreto con dinamica asincrona che converge a un minimo locale di una funzione di costo definita su \\([0,2\\pi]^L\\)\nI punti chiave dell’approccio sono:\n\nRiduzione della dimensionalità su \\(S^1\\)\nSeparazione geometrica tramite angoli\nInferenza automatica del numero di cluster\nFunzione di Lyapunov come criterio di stabilità\n\nTuttavia, l’algoritmo opera su una matrice di similarità predefinita e non apprende una rappresentazione ottimale dei dati.\nNasce quindi l’idea di integrare CircleClustering come strato strutturale differenziabile all’interno di un modello Deep Learning.",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#obiettivo",
+    "href": "deep_clustering.html#obiettivo",
+    "title": "Deep clustering",
+    "section": "Obiettivo",
+    "text": "Obiettivo\nProgettare un modello Deep Learning innovativo che:\n\nApprenda uno spazio latente ottimale.\nProietti dinamicamente le embedding su \\(S^1\\).\nIntegri un layer CircleClustering differenziabile.\nOttimizzi congiuntamente rappresentazione e separazione.\nInferisca automaticamente il numero di cluster.",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#idea-innovativa",
+    "href": "deep_clustering.html#idea-innovativa",
+    "title": "Deep clustering",
+    "section": "Idea Innovativa",
+    "text": "Idea Innovativa\n\n1️⃣ Embedding Learning\nDato un dataset \\(X \\in \\mathbb{R}^{n \\times d}\\):\n\\[\nZ = f_\\theta(X)\n\\]\ndove \\(f_\\theta\\) è una rete neurale.\n\n\n2️⃣ Proiezione angolare learnable\nOgni embedding è mappata in:\n\\[\n\\xi_i = (\\cos \\theta_i, \\sin \\theta_i)\n\\]\ncon:\n\\[\n\\theta_i = g_\\phi(Z_i)\n\\]\ndove \\(g_\\phi\\) è un MLP che produce angoli.\n\n\n3️⃣ Loss Circle-Based\nSi utilizza la funzione costo originale:\n\\[\nJ(\\theta) = \\frac{1}{2} \\sum_{i&lt;j} w_{ij} \\cos(\\theta_i - \\theta_j)\n\\]\nma con \\(w_{ij}\\) appreso dinamicamente:\n\\[\nw_{ij} = \\text{sim}(Z_i, Z_j)\n\\]\nIl modello apprende sia la metrica che la disposizione su \\(S^1\\).\n\n\n4️⃣ Differentiable Circle Optimization\nInvece di aggiornamento asincrono discreto, si usa:\n\nGradient descent su \\(\\theta\\)\nOppure un layer neurale che approssima l’equilibrio dinamico\n\nQuesto rende l’intero sistema end-to-end.",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#architettura-proposta",
+    "href": "deep_clustering.html#architettura-proposta",
+    "title": "Deep clustering",
+    "section": "Architettura Proposta",
+    "text": "Architettura Proposta\n\nEncoder (MLP / Transformer / GNN)\nAngle projection head\nCircle optimization layer\nDensity estimation head\nGaussian Mixture inference layer",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#attività",
+    "href": "deep_clustering.html#attività",
+    "title": "Deep clustering",
+    "section": "Attività",
+    "text": "Attività\n\nFormalizzazione matematica del problema differenziabile.\nStudio della stabilità del sistema in ambiente deep.\nImplementazione PyTorch del CircleLayer.\nConfronto con:\n\nKMeans\nSpectral Clustering\nDeep Embedded Clustering (DEC)\nContrastive clustering\n\nStudio della scalabilità (GPU).",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#contributi-scientifici-attesi",
+    "href": "deep_clustering.html#contributi-scientifici-attesi",
+    "title": "Deep clustering",
+    "section": "Contributi Scientifici Attesi",
+    "text": "Contributi Scientifici Attesi\n\nPrimo modello Deep Learning con clustering geometrico su \\(S^1\\).\nIntegrazione di funzione di Lyapunov in loss neurale.\nRiduzione della necessità di iperparametri.\nInferenza strutturale del numero di cluster.\nPossibile estensione a \\(S^k\\) (ipersfere).",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#dataset-di-validazione",
+    "href": "deep_clustering.html#dataset-di-validazione",
+    "title": "Deep clustering",
+    "section": "Dataset di Validazione",
+    "text": "Dataset di Validazione\n\nBenchmark sintetici (G2MG, H2MG)\nUCI high-dimensional\nDataset multimodali\nEmbedding vision o motion forecasting",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#risultati-attesi",
+    "href": "deep_clustering.html#risultati-attesi",
+    "title": "Deep clustering",
+    "section": "Risultati Attesi",
+    "text": "Risultati Attesi\n\nMigliore robustezza rispetto a metodi deep classici.\nStabilità numerica superiore.\nMigliore interpretabilità geometrica.\nConvergenza più regolare rispetto a DEC.",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#estensioni-future",
+    "href": "deep_clustering.html#estensioni-future",
+    "title": "Deep clustering",
+    "section": "Estensioni Future",
+    "text": "Estensioni Future\n\nCircleClustering su manifolds generali.\nIntegrazione con metric learning.\nVersione probabilistica bayesiana.\nCircleClustering per segmentation.\n\n\nPapers:\n\nScarica la tesi completa (PDF)\nBoccignone et al. (2025)",
+    "crumbs": [
+      "Deep clustering"
+    ]
+  },
+  {
+    "objectID": "deep_clustering.html#references",
+    "href": "deep_clustering.html#references",
+    "title": "Deep clustering",
+    "section": "References",
+    "text": "References\n\n\nBoccignone, Giuseppe, Donatello Conte, Vittorio Cuculo, Alessandro D’Amelio, Giuliano Grossi, and Raffaella Lanzarotti. 2025. “Enhancing rPPG Pulse-Signal Recovery by Facial Sampling and PSD Clustering.” Biomedical Signal Processing and Control 101: 107158. https://doi.org/10.1016/j.bspc.2024.107158.",
+    "crumbs": [
+      "Deep clustering"
     ]
   }
 ]
