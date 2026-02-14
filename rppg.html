@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -196,7 +216,11 @@ window.Quarto = {
   <li><a href="#obiettivo" id="toc-obiettivo" class="nav-link" data-scroll-target="#obiettivo">Obiettivo</a></li>
   <li><a href="#attività" id="toc-attività" class="nav-link" data-scroll-target="#attività">Attività</a></li>
   <li><a href="#risultati-attesi" id="toc-risultati-attesi" class="nav-link" data-scroll-target="#risultati-attesi">Risultati Attesi</a></li>
-  <li><a href="#impatto" id="toc-impatto" class="nav-link" data-scroll-target="#impatto">Impatto</a></li>
+  <li><a href="#impatto" id="toc-impatto" class="nav-link" data-scroll-target="#impatto">Impatto</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References:</a></li>
+  </ul></li>
+  <li><a href="#biblio" id="toc-biblio" class="nav-link" data-scroll-target="#biblio">Biblio</a></li>
   </ul>
 </nav>
     </div>
@@ -224,7 +248,11 @@ window.Quarto = {
 
 <section id="titolo-monitoraggio-non-invasivo-della-vitalità-nel-trapianto-cutaneo-tramite-rppg-e-analisi-spettrale-explainable" class="level2">
 <h2 class="anchored" data-anchor-id="titolo-monitoraggio-non-invasivo-della-vitalità-nel-trapianto-cutaneo-tramite-rppg-e-analisi-spettrale-explainable"><em>Titolo</em>: Monitoraggio Non Invasivo della Vitalità nel Trapianto Cutaneo tramite rPPG e Analisi Spettrale Explainable</h2>
-<p><img src="images/rppg.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rppg.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
 <section id="contesto" class="level2">
 <h2 class="anchored" data-anchor-id="contesto">Contesto</h2>
@@ -238,7 +266,7 @@ window.Quarto = {
 </ul>
 <p>Tali metodi presentano limiti di soggettività e non sempre consentono un’identificazione precoce del deterioramento della perfusione.</p>
 <p>La <strong>remote photoplethysmography (rPPG)</strong> permette di stimare in modo <em>contactless</em> le variazioni del volume ematico attraverso l’analisi delle variazioni cromatiche cutanee nel dominio RGB. Recenti studi dimostrano che l’analisi spettrale (PSD) e la selezione adattiva di patch migliorano significativamente la robustezza del segnale pulsatile, anche in presenza di rumore e movimenti &lt;</p>
-<p>Applicare tali tecniche al trapianto cutaneo consente di stimare un indice quantitativo di perfusione microvascolare del graft .</p>
+<p>Applicare tali tecniche al trapianto cutaneo consente di stimare un indice quantitativo di perfusione microvascolare del graft.</p>
 </section>
 <section id="obiettivo" class="level2">
 <h2 class="anchored" data-anchor-id="obiettivo">Obiettivo</h2>
@@ -308,6 +336,37 @@ window.Quarto = {
 </ul></li>
 </ul>
 <p>Il progetto rappresenta un ponte tra ingegneria biomedica, computer vision e chirurgia ricostruttiva, con applicazione diretta in contesto ospedaliero ad alta specializzazione.</p>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References:</h3>
+<ul>
+<li><span class="citation" data-cites="rppg_Access">Boccignone et al. (<a href="rppg.html#ref-rppg_Access" role="doc-biblioref">2020</a>)</span></li>
+<li><span class="citation" data-cites="Boccignone2022pyVHR">Boccignone et al. (<a href="rppg.html#ref-Boccignone2022pyVHR" role="doc-biblioref">2022</a>)</span></li>
+<li><span class="citation" data-cites="Boccignone2025PSDClustering">Boccignone et al. (<a href="rppg.html#ref-Boccignone2025PSDClustering" role="doc-biblioref">2025</a>)</span></li>
+</ul>
+</section>
+</section>
+<section id="biblio" class="level2">
+<h2 class="anchored" data-anchor-id="biblio">Biblio</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-rppg_Access" class="csl-entry" role="listitem">
+Boccignone, Giuseppe, Donatello Conte, Vittorio Cuculo, Alessandro
+D’Amelio, Giuliano Grossi, and Raffaella Lanzarotti. 2020. <span>“An
+Open Framework for Remote-PPG Methods and Their Assessment.”</span>
+<em>IEEE Access</em> 8: 216083–103. <a href="https://doi.org/10.1109/ACCESS.2020.3040936">https://doi.org/10.1109/ACCESS.2020.3040936</a>.
+</div>
+<div id="ref-Boccignone2025PSDClustering" class="csl-entry" role="listitem">
+———. 2025. <span>“Enhancing rPPG Pulse-Signal Recovery by Facial
+Sampling and PSD Clustering.”</span> <em>Biomedical Signal Processing
+and Control</em> 101: 107158. <a href="https://doi.org/10.1016/j.bspc.2024.107158">https://doi.org/10.1016/j.bspc.2024.107158</a>.
+</div>
+<div id="ref-Boccignone2022pyVHR" class="csl-entry" role="listitem">
+Boccignone, Giuseppe, Donatello Conte, Vittorio Cuculo, Alessandro
+D’Amelio, Giuliano Grossi, Raffaella Lanzarotti, and Edoardo Mortara.
+2022. <span>“pyVHR: A Python Framework for Remote
+Photoplethysmography.”</span> <em>PeerJ Computer Science</em> 8: e929.
+<a href="https://peerj.com/articles/cs-929/">https://peerj.com/articles/cs-929/</a>.
+</div>
+</div>
 
 
 </section>
