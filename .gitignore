@@ -1,6 +1,3 @@
-/.vscode
-/_book
-
 # ==============================
 # Quarto
 # ==============================
@@ -30,3 +27,5 @@ _cache/
 # PDF build artifacts
 *.nav
 *.snm
+# vscode
+/.vscode
