@@ -145,8 +145,8 @@ Questo rende l’intero sistema end-to-end.
 
 
 ### Papers: 
-- [Scarica la tesi completa (PDF)](papers/tesi_morgan_malavasi.pdf)
-- @Boccignone2025BSPC
+- [tesi su circle clustering](papers/tesi_morgan_malavasi.pdf)
+- Uso di circle lcustering: @Boccignone2025BSPC
 
 
 ## References
