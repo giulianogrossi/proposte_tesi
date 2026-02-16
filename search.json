@@ -34,17 +34,17 @@
     "href": "landmarks.html",
     "title": "Landmarks 3D",
     "section": "",
-    "text": "Titolo: Analisi Automatizzata di Landmark 3D per il Riconoscimento Anatomico e il Supporto alle Decisioni Cliniche\n## Contesto e Motivazione\nL’analisi dei landmark anatomici tridimensionali rappresenta uno strumento fondamentale per la descrizione quantitativa della morfologia umana a partire da dati di imaging 3D (TC, CBCT, scansioni ottiche, nuvole di punti).\nL’identificazione automatica di punti anatomici di riferimento consente di:\nTuttavia, la variabilità anatomica e la complessità dei dati tridimensionali rendono ancora sfidante una localizzazione robusta e generalizzabile.",
+    "text": "Titolo: Analisi Automatizzata di Landmark 3D per il Riconoscimento Anatomico e il Supporto alle Decisioni Cliniche",
     "crumbs": [
       "Landmarks 3D"
     ]
   },
   {
-    "objectID": "landmarks.html#titolo-analisi-automatizzata-di-landmark-3d-per-il-riconoscimento-anatomico-e-il-supporto-alle-decisioni-cliniche",
-    "href": "landmarks.html#titolo-analisi-automatizzata-di-landmark-3d-per-il-riconoscimento-anatomico-e-il-supporto-alle-decisioni-cliniche",
+    "objectID": "landmarks.html#contesto-e-motivazione",
+    "href": "landmarks.html#contesto-e-motivazione",
     "title": "Landmarks 3D",
-    "section": "",
-    "text": "migliorare l’oggettività delle valutazioni cliniche;\nsupportare la pianificazione chirurgica;\nmonitorare l’evoluzione terapeutica;\nridurre la variabilità inter-operatore.",
+    "section": "Contesto e Motivazione",
+    "text": "Contesto e Motivazione\nL’analisi dei landmark anatomici tridimensionali rappresenta uno strumento fondamentale per la descrizione quantitativa della morfologia umana a partire da dati di imaging 3D (TC, CBCT, scansioni ottiche, nuvole di punti).\nL’identificazione automatica di punti anatomici di riferimento consente di:\n\nmigliorare l’oggettività delle valutazioni cliniche;\nsupportare la pianificazione chirurgica;\nmonitorare l’evoluzione terapeutica;\nridurre la variabilità inter-operatore.\n\nTuttavia, la variabilità anatomica e la complessità dei dati tridimensionali rendono ancora sfidante una localizzazione robusta e generalizzabile.",
     "crumbs": [
       "Landmarks 3D"
     ]
